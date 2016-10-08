@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
 
+// import { CustomersComponent } from './customer/customers.Component';
+
 @Component({
+    moduleId: module.id,
     selector: 'my-app',
-    templateUrl: 'app/app.component.html'
+    // templateUrl: './app/app.component.html',
+    templateUrl: 'app.component.html',
+    // directives: [CustomersComponent]
 })
 export class AppComponent {
 
@@ -11,10 +16,11 @@ export class AppComponent {
 
     title = 'Customer App';
     name = 'Mehdi';
-    mehdisColor = 'red'; 
+    itemColor = 'red';
 
-    changeNameColor(){
-        // this.mehdisColor = 'blue';
-        this.mehdisColor = this.mehdisColor === 'blue' ? 'red' : 'blue';
+
+    changeColor() {
+        // this.itemColor = 'blue';
+        this.itemColor = this.itemColor === 'blue' ? 'red' : 'blue';
     }
  }

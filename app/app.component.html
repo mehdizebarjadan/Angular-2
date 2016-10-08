@@ -1,5 +1,19 @@
 <h1>{{title}}</h1>
-<div [style.color]="mehdisColor">
+<div [style.color]="itemColor">
     Hello {{name}}
 </div>
-<button (click)="changeNameColor()">Change Name Color</button>
+
+<!--<input type="text" [value]="name" (keyup)="name = $event.target.value">-->
+<!--<input type="text" [value]="name" (keyup.enter)="name = $event.target.value">-->
+<!--<input type="text" [value]="name" (blur)="name = $event.target.value">-->
+<!--<input type="text" [value]="name" (input)="name = $event.target.value">-->
+<!--<input type="text" [value]="name" (change)="name = $event.target.value">-->
+<input type="text" [(ngModel)]="name"> 
+<button (click)="changeColor()">Change Color</button>
+<br/>
+
+
+<app-customers></app-customers>
+
+
+
